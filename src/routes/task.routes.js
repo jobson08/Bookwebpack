@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 
 //Verificar um conteudo
 router.get('/:id', async (req, res) => {
-    const tasks = await Task.findById(req, params.id) ;
+    const tasks = await Task.findById(req, params.id);
        res.json(tasks);
 });
 
