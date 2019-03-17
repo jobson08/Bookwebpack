@@ -19,7 +19,7 @@ router.post('/', async (req, res) =>{
     const { titulo, descricao } = req.body;
     const task = new Task({titulo, descricao});
     await task.save();
-    res.json({status: 'dados Recebido'});
+    res.json({status: 'dados Recebido'}); 
 })
 
 //Editar um conteudo
